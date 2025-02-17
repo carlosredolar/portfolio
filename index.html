@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Personal Portfolio" />
-    <meta name="keywords" conent="Game,Developer,Portfolio,Designer,Product designer,Videogame design, UI, UX" />
+    <meta name="keywords" conent="Game,Developer,Portfolio,Designerr" />
     <meta name="author" content="Carlos Redolar Torres" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlos Redolar Torres | Designer</title>
@@ -16,14 +16,13 @@
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-    <nav class="sidebar">
-        <a href="#AboutMe" class="nav-link">About Me</a>
-        <a href="#Products" class="nav-link">Products</a>
-        <a href="#UI" class="nav-link">UI</a>
-        <a href="#Videogames" class="nav-link">Videogames</a>
-        <a href="#Contact" class="nav-link">Contact</a>
-    </nav>
+    <!--Navbar-->
+    <div id="navbar" style="z-index: 10;">
+        <a href="#AboutMe">About Me</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
     <!--About Me-->
         <div id="AboutMe" style="background-color: white">
             <div class="section">
@@ -39,7 +38,9 @@
                             and more technical (programming) branches, my speciality and predilection is towards the area of creation and design.
                             <br>                            
                         </p>
+
                     </div>
+
                     <div class="col-4 col-s-6">
                         <div class="row" style="padding: 10%;">
                             <img src="photos/personal_picture.jpeg" alt="Personal Picture" style="border-radius: 100%;">
@@ -52,78 +53,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-     <!-- Products -->
-    <div id="Products" class="row" style="background-color: #f5f5f0;">
-        <div class="section">
-            <h2 style="color: black; text-align: center;">Products</h2>
-            <div class="projects-grid-container">
-                <div class="project"
-                    onClick="openUrlInNewTab('https://citm-vgdd-2018-2022.github.io/TM-Ashes_of_the_Empire/team/carlos_redolar.html');">
-                    <img src="photos/mandalorian.png" alt="Mandalorian: Ashes of the Empire">
-                    <div class="projects-overlay">
-                        <div class="project-name"> The Mandalorian: Ashes of the Empire </div>>
-                    </div>
-                </div>
 
-                <div class="project"
-                    onClick="openUrlInNewTab('https://github.com/carlosredolar/R-Engine');">
-                    <img src="photos/r_engine.png" alt="R-Engine">
-                    <div class="projects-overlay">
-                        <div class="project-name"> R-Engine </div>>
-                    </div>
-                </div>
-
-                <div class="project"
-                    onClick="openUrlInNewTab('https://bleachkrieg.github.io/Conquerors-Crown-New-Horizon/');">
-                    <img src="photos/conquerors_crown_new_horizon.png" alt="Conqueror's Crown: New Horizon">
-                    <div class="projects-overlay">
-                        <div class="project-name"> Conqueror's Crown: New Horizon </div>>
-                    </div>
-                </div>
-
-                <div class="project" onClick="openUrlInNewTab('https://oscarroyo4.github.io/UnknownMiner/');">
-                    <img src="photos/unknown_miner.png" alt="Unknown Miner">
-                    <div class="projects-overlay">
-                        <div class="project-name"> Unknown Miner </div>>
-                    </div>
-                </div>
-
-                <div class="project"
-                    onClick="openUrlInNewTab('https://jbgelsenorj.github.io/Fatal-Fury-King-Of-Fighters/');">
-                    <img src="photos/fatal_fury.png" alt="Fatal Fury King Of Fighters">
-                    <div class="projects-overlay">
-                        <div class="project-name"> Fatal Fury King Of Fighters </div>>
-                    </div>
-                </div>
                 
-                <div class="project"
-                    onClick="openUrlInNewTab('https://www.youtube.com/watch?v=8HHIFswmqyM');">
-                    <img src="photos/the_witcher.png" alt="The Witcher Concept Map">
-                    <div class="projects-overlay">
-                        <div class="project-name"> The Witcher Concept Map </div>>
-                    </div>
-                </div>
-                
-                <div class="project"
-                    onClick="openUrlInNewTab('https://github.com/daskza19/UnoOnline');">
-                    <img src="photos/uno.png" alt="UNO Online">
-                    <div class="projects-overlay">
-                        <div class="project-name"> UNO Online </div>>
-                    </div>
-                </div>
-                
-                <h2 style="color: black; text-align: center;">Graphic design and Branding</h2>
-                <center><img src="photos/brands.png" alt="Graphic design and Branding"></center>
-
             </div>
         </div>
     
-    <!-- UI -->
-    <div id="UI" class="row" style="background-color: #EBEBEB;">
+    <!-- Projects -->
+    <div id="Projects" class="row" style="background-color: #EBEBEB;">
         <div class="section">
-            <h2 style="color: black; text-align: center;">UI</h2>
+            <h2 style="color: black; text-align: center;">Projects</h2>
             <div class="projects-grid-container">
                 <div class="project"
                     onClick="openUrlInNewTab('https://citm-vgdd-2018-2022.github.io/TM-Ashes_of_the_Empire/team/carlos_redolar.html');">
@@ -186,72 +124,6 @@
             </div>
         </div>
 
-        <!-- Videogames -->
-    <div id="Videogames" class="row" style="background-color: #f5f5f0;">
-        <div class="section">
-            <h2 style="color: black; text-align: center;">Videogames</h2>
-            <div class="projects-grid-container">
-                <div class="project"
-                    onClick="openUrlInNewTab('https://citm-vgdd-2018-2022.github.io/TM-Ashes_of_the_Empire/team/carlos_redolar.html');">
-                    <img src="photos/mandalorian.png" alt="Mandalorian: Ashes of the Empire">
-                    <div class="projects-overlay">
-                        <div class="project-name"> The Mandalorian: Ashes of the Empire </div>>
-                    </div>
-                </div>
-
-                <div class="project"
-                    onClick="openUrlInNewTab('https://github.com/carlosredolar/R-Engine');">
-                    <img src="photos/r_engine.png" alt="R-Engine">
-                    <div class="projects-overlay">
-                        <div class="project-name"> R-Engine </div>>
-                    </div>
-                </div>
-
-                <div class="project"
-                    onClick="openUrlInNewTab('https://bleachkrieg.github.io/Conquerors-Crown-New-Horizon/');">
-                    <img src="photos/conquerors_crown_new_horizon.png" alt="Conqueror's Crown: New Horizon">
-                    <div class="projects-overlay">
-                        <div class="project-name"> Conqueror's Crown: New Horizon </div>>
-                    </div>
-                </div>
-
-                <div class="project" onClick="openUrlInNewTab('https://oscarroyo4.github.io/UnknownMiner/');">
-                    <img src="photos/unknown_miner.png" alt="Unknown Miner">
-                    <div class="projects-overlay">
-                        <div class="project-name"> Unknown Miner </div>>
-                    </div>
-                </div>
-
-                <div class="project"
-                    onClick="openUrlInNewTab('https://jbgelsenorj.github.io/Fatal-Fury-King-Of-Fighters/');">
-                    <img src="photos/fatal_fury.png" alt="Fatal Fury King Of Fighters">
-                    <div class="projects-overlay">
-                        <div class="project-name"> Fatal Fury King Of Fighters </div>>
-                    </div>
-                </div>
-                
-                <div class="project"
-                    onClick="openUrlInNewTab('https://www.youtube.com/watch?v=8HHIFswmqyM');">
-                    <img src="photos/the_witcher.png" alt="The Witcher Concept Map">
-                    <div class="projects-overlay">
-                        <div class="project-name"> The Witcher Concept Map </div>>
-                    </div>
-                </div>
-                
-                <div class="project"
-                    onClick="openUrlInNewTab('https://github.com/daskza19/UnoOnline');">
-                    <img src="photos/uno.png" alt="UNO Online">
-                    <div class="projects-overlay">
-                        <div class="project-name"> UNO Online </div>>
-                    </div>
-                </div>
-                
-                <h2 style="color: black; text-align: center;">Graphic design and Branding</h2>
-                <center><img src="photos/brands.png" alt="Graphic design and Branding"></center>
-
-            </div>
-        </div>
-        
         <!--Contact-->
         <div style="background-color: #EBEBEB;">
             <div id="Contact">
@@ -296,28 +168,6 @@
             function openUrlInNewTab(url) {
                 window.open(url, "_blank");
             }
-
-            // Resaltar la sección activa al hacer scroll
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        window.addEventListener("scroll", () => {
-            let current = "";
-
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                if (scrollY >= sectionTop - 100) {
-                    current = section.getAttribute("id");
-                }
-            });
-
-            navLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (link.getAttribute("href").includes(current)) {
-                    link.classList.add("active");
-                }
-            });
-        });
         </script>
 
 </body>

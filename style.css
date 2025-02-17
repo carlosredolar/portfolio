@@ -294,47 +294,27 @@ a:visited {
     justify-self: center;
 }
 
-/* Barra de navegación lateral */
+/* Barra lateral fija */
         .sidebar {
             position: fixed;
             top: 50%;
             right: 20px;
             transform: translateY(-50%);
-            background: transparent; /* Fondo transparente */
+            background: rgba(0, 0, 0, 0.8);
             padding: 10px;
+            border-radius: 10px;
         }
 
-        /* Estilos de los enlaces */
         .sidebar a {
             display: block;
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px;
             margin: 5px 0;
             border-radius: 5px;
-            position: relative;
             transition: background 0.3s;
         }
 
-        /* Barra indicadora */
-        .sidebar a::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 5px;
-            height: 0;
+        .sidebar a:hover, .sidebar a.active {
             background: #007bff;
-            transition: height 0.3s;
-        }
-
-        /* Efecto al pasar el mouse */
-        .sidebar a:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Enlace activo con barra indicadora */
-        .sidebar a.active::before {
-            height: 100%; /* La barra se expande */
         }
