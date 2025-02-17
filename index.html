@@ -18,9 +18,9 @@
 <body>
     <!-- Barra de navegación -->
     <nav class="sidebar">
-        <a href="#Products">Products</a>
-        <a href="#UI">UI</a>
-        <a href="#Videogames">Videogames</a>
+        <a href="#Products" class="nav-link">Products</a>
+        <a href="#UI" class="nav-link">UI</a>
+        <a href="#Videogames" class="nav-link">Videogames</a>
     </nav>
 
      <!-- Products -->
@@ -265,6 +265,28 @@
             function openUrlInNewTab(url) {
                 window.open(url, "_blank");
             }
+
+            // Resaltar la sección activa al hacer scroll
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 100) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
         </script>
 
 </body>
