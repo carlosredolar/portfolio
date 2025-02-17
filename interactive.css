@@ -39,7 +39,7 @@
 
 /*buttons and effects*/
 .cv-button {
-    color              : #4C5A9F;
+    color              : black;
     background-color   : transparent;
     border-width       : 2px;
     border             : solid;
@@ -52,8 +52,8 @@
 }
 
 .cv-button:hover {
-    background-color: #4C5A9F;
-    color           : white;
+    background-color: #ffb13d;
+    color           : black;
 }
 
 .contact-button {
